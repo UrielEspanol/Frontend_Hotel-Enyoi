@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Enyoi - Santa Marta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-contain bg-center bg-no-repeat" style="">
+
+    <header class="bg-blue-600 text-white p-5 shadow-lg fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Tu Hotel Enyoi</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-yellow-300">Inicio</a></li>
+                    <li><a href="#hotels" class="hover:text-yellow-300">Hoteles</a></li>
+                    <li><a href="#gallery" class="hover:text-yellow-300">Galería</a></li>
+                    <li><a href="#reservations" class="hover:text-yellow-300">Reservas</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-300">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center relative" style="background-image: url('./image/descarga\ \(5\).jpg');">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative text-white px-6">
+            <h2 class="text-5xl font-extrabold animate-fade-in">Explora Tu Hotel Enyoi</h2>
+            <p class="mt-4 text-lg">Descubre los mejores hoteles Enyoi en Colombia.</p>
+            <a href="#hotels" class="mt-6 inline-block bg-yellow-500 text-white px-6 py-3 rounded-lg text-lg shadow-lg hover:bg-yellow-600 transition">Ver Hoteles</a>
+        </div>
+    </section>
+
+    <section id="hotels" class="py-16 bg-white">
+        <h2 class="text-4xl font-bold text-center mb-8">Nuestros Hoteles</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="hotel-grid">
+                <div class="hotel-card">
+                    <img src="./image/hotel 1.jpg" alt="Hotel 1">
+                    <h3>Hotel Mar Azul</h3>
+                    <p>Un lugar ideal para relajarte con vista al mar.</p>
+                    <button>Reservar</button>
+                </div>
+            
+                <div class="hotel-card">
+                    <img src="./image/hotel 2.jpg" alt="Hotel 2">
+                    <h3>Eco Hotel Sierra</h3>
+                    <p>Conéctate con la naturaleza en medio del mar.</p>
+                    <button>Reservar</button>
+                </div>
+            
+                <div class="hotel-card">
+                    <img src="./image/hotel 3.jpg" alt="Hotel 3">
+                    <h3>Hotel Vista Hermosa</h3>
+                    <p>Disfruta de espectaculares vistas panorámicas.</p>
+                    <button>Reservar</button>
+                </div>
+                
+                <div class="hotel-card">
+                    <img src="./image/hotel 4.jpg" alt="Hotel 4">
+                    <h3>Hotel Costa Brisa</h3>
+                    <p>Relájate con la brisa marina y el sonido de las olas.</p>
+                    <button>Reservar</button>
+                </div>
+            </div>
+            
+</div>
+
+        </div>
+    </section>
+
+    <section id="gallery" class="py-16 bg-gray-100">
+        <h2 class="text-4xl font-bold text-center mb-8">Galería de cuartos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <img src="" alt="Playa" class="rounded-lg shadow-lg w-full hover:scale-105 transition">
+            <img src="" alt="Playa 2" class="rounded-lg shadow-lg w-full hover:scale-105 transition">
+            <img src="" alt="Playa 3" class="rounded-lg shadow-lg w-full hover:scale-105 transition">
+        </div>
+    </section>
+
+    <section id="reservations" class="py-16 text-center">
+        <h2 class="text-4xl font-bold">Reserva tu Estancia</h2>
+        <form class="max-w-lg mx-auto mt-6 bg-white p-8 rounded-lg shadow-lg">
+            <label for="name" class="block text-left font-semibold">Nombre:</label>
+            <input type="text" id="name" required class="w-full border p-2 rounded mt-1">
+            
+            <label for="email" class="block text-left font-semibold mt-4">Correo:</label>
+            <input type="email" id="email" required class="w-full border p-2 rounded mt-1">
+            
+            <label for="hotel" class="block text-left font-semibold mt-4">Hotel:</label>
+            <select id="hotel" class="w-full border p-2 rounded mt-1">
+                <option>Hotel Mar Azul</option>
+                <option>Eco Hotel Sierra</option>
+            </select>
+            
+            <button type="submit" class="mt-6 bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition w-full">Reservar</button>
+        </form>
+    </section>
+    
+    <footer class="bg-blue-600 text-white text-center p-6 mt-10">
+        <p>&copy; 2025 Hotel Enyoi - Santa Marta</p>
+    </footer>
+    <div id="root"></div> 
+
+    <script src="./bundle.js" type="module"></script>
+
+
+</body>
+</html>
+
